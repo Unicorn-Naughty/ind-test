@@ -56,14 +56,11 @@ export const OurServicesCarousel: React.FC<Props> = ({
           >
             <OurServicesCard
               className={cn(
-                "transition-shadow duration-300 ease-in-out max-sm:mb-10",
+                "transition-shadow duration-300 ease-in-out ",
                 current === index && "drop-shadow-lg"
               )}
               item={item}
             />
-            <p className="text-balance text-[14px] leading-5 text-[#151515]">
-              {item.text}
-            </p>
           </CarouselItem>
         ))}
       </CarouselContent>
